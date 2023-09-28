@@ -1,0 +1,468 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face {
+    font-family: jost;
+    src: url(Jost/Jost-VariableFont_wght.ttf);
+}
+
+.view-options{
+    display: none;
+}
+
+.accordion-gallery{
+    display: none;
+}
+
+.img-stylings{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.ivey-logo-wrapper-mobile{
+    text-align: center;
+    display: grid;
+    grid-gap: 1.25rem;
+    font-family: jost;
+    color: #9c9c9c;
+    margin: 1rem 0rem;
+}
+
+.logo-stylings{
+    width: 150px;
+    margin: auto;
+   
+}
+
+
+
+
+
+.menu-button{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: jost;
+}
+
+.nav-menu-desktop{
+    display: none;
+}
+
+.nav-menu-mobile{
+    font-family: jost;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    background-color: #f0f0f0;
+    row-gap: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1000ms ease;
+}
+
+.nav-menu-mobile[data-visible="true"] {
+   max-height: 275px;
+   transition: 1000ms ease;
+   padding: 1rem;
+}
+
+
+
+.nav-links{
+    color: #9c9c9c;
+    transition: 500ms ease;
+}
+
+
+
+.nav-links:hover{
+    color: #000;
+    transition: 500ms ease;
+}
+
+.current-page{
+    color: #000;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 1rem 1rem 1rem;
+    row-gap: 1rem;
+}
+
+.modal-slider-wrapper{
+    display: none;
+}
+
+
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    padding: 1.25rem;
+}
+
+
+.about-text{
+    line-height: 1.5;
+    letter-spacing: 1.15px;
+}
+
+
+.contact-section{
+    display: grid;
+    padding: 3rem 1rem;
+}
+
+@media(min-width:1024px){
+
+    .nav-menu-desktop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0rem;
+        font-family: jost;
+    }
+
+    .nav-link-wrapper{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 1rem 1rem;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .ivey-logo-wrapper-desktop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        row-gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links{
+        font-weight: 500;
+        font-size: 14px;
+        
+    }
+
+    .nav-menu-mobile{
+        display: none;
+    }
+
+    .menu-button-wrapper{
+        display: none;
+    }
+
+    .ivey-logo-wrapper-mobile{
+        display: none;
+    }
+
+
+
+
+    .gallery{
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: .75rem;
+        padding: 1rem 3rem 1rem 3rem;
+        animation: grid-view 950ms ease;
+    }
+
+    @keyframes grid-view {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .img-stylings{
+        max-height: 600px;
+    }
+
+
+
+    .img-height{
+        max-height: 600px;
+    }
+
+    .xs-img{
+        grid-column: span 2;
+    }
+
+    .small-img{
+        grid-column: span 3;
+    
+    }
+
+    .half-img{
+        grid-column: span 4;
+    
+    }
+
+    .medium-img{
+       
+        grid-column: span 5;
+    }
+
+    .large-img{
+     
+        grid-column: span 8;
+    }
+
+    .view-options{
+        display: flex;
+        justify-content: center;
+        margin: 0rem 3rem 0rem 0rem;
+    }
+
+    .view-button{
+        cursor: pointer;
+        border: none;
+        
+        
+        transition: 500ms ease;
+    }
+
+    .grid-icon{
+        stroke:#000;
+        stroke-width: 1px;
+        fill: none;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        transition: 500ms ease;
+    }
+
+    .view-icons-active{
+        stroke-width: 2.5px;
+        transition: 500ms ease;
+    }
+
+    .selected-option{
+        transition: 500ms ease;
+        background-color: aqua;
+    }
+
+
+    .accordion-gallery{
+        display: flex;
+        padding: 2rem 1rem 3rem 1rem;
+        flex-direction: row;
+       justify-content: center;
+    }
+
+    .accordion-img{
+        height: 550px;
+        border-radius: 4rem 4rem;
+    }
+
+    .accordion-wrapper{
+        width: 125px;
+        margin: 0rem 0.5rem;
+      
+        transition: 500ms ease;
+    }
+
+    
+    .accordion-wrapper:hover{
+        width: 650px;
+        transition: 750ms ease;
+    }
+    
+    .ac-1{
+        animation: ac-1 750ms ease;
+    }
+
+    @keyframes ac-1{
+        0%{
+            opacity: 0;
+            transform: translateY(250px);
+        }
+
+
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .ac-2{
+        animation: ac-1 850ms ease;
+     
+    }
+
+    .ac-3{
+        animation: ac-1 950ms ease;
+    
+    }
+
+    .ac-4{
+        animation: ac-1 1050ms ease;
+   
+    }
+
+    .ac-5{
+        animation: ac-1 1150ms ease;
+     
+    }
+
+    .ac-6{
+        animation: ac-1 1250ms ease;
+      
+    }
+
+    .ac-7{
+        animation: ac-1 1350ms ease;
+      
+    }
+   
+    .accordion-gallery-hidden{
+        display: none;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .grid-gallery-hidden{
+        display: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+
+    .modal-slider-wrapper{
+        display: grid;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        background-color: #f0f0f0;
+    }
+
+    .img-slider{
+        display: flex;
+        overflow: auto;
+        flex-wrap: nowrap;
+        margin: 0rem 8rem;
+    
+        scroll-snap-type: x mandatory;
+    }
+
+    .img-slider::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroll-item{
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .exit-button-modal{
+        border: none;
+
+    }
+
+    .burger-button{
+        stroke: #000;
+        stroke-width: 2.5px;
+        transition: 500ms ease;
+    }
+
+    .modal-img{
+
+        max-height: 600px;
+        
+      
+        animation: modal-img 300ms ease-in;
+    }
+
+    @keyframes modal-img {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+
+    .modal-buttons{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .button-wrapper{
+        text-align: center;
+    }
+
+    .about-img-wrapper{
+        padding: 0rem 4rem;
+    }
+
+}
+
+
+
+@media(min-width:1440px){
+    .nav-menu-desktop{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-link-wrapper{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .ivey-logo-wrapper-desktop{
+        grid-column: span 1;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .large-img{
+        grid-column: span 2;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+       
+    }
+
+    .height-img{
+        max-height: 650px;
+    }
+}
