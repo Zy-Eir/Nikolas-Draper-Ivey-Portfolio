@@ -102,7 +102,81 @@
 
     </div>
 
-    <div class="gallery">
+    <div class="view-options">
+        <div >
+            <button class="view-button selected-option" id="grid-button">
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="60" height="50">
+                  
+                   
+                  <path fill="black" d="
+                    M 10 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+                    
+                    M 10 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    M 55 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    M 55 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    "
+                  />
+                </svg>
+            </button>
+        </div>
+
+        <div>
+            <button class="view-button accordion-button" id="accordion-button" >
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="50" height="50">
+               
+                  <path fill="black"
+                  d="
+                    M 30 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
+                  />
+
+                  <path fill="black"
+                  d="
+                    M 70 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
+                  />
+
+                 
+                </svg>
+            </button>
+        </div>
+
+        
+    
+    </div>
+
+    <div id="grid-view" class="gallery">
 
         <div  class="img-wrapper small-img">
             <img class="img-stylings " src="death-stranding-tribute.jpg" alt="">
@@ -167,7 +241,7 @@
     <div id="accordion-view" class="accordion-gallery accordion-gallery-hidden">
 
         <div class="accordion-wrapper ac-1">
-            <img class="img-stylings accordion-img" src="death-stranding-tribute.jpg" alt="">
+            <img class="img-positioning img-stylings accordion-img" src="death-stranding-tribute.jpg" alt="">
         </div>
     
         <div class="accordion-wrapper ac-2">

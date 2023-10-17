@@ -107,35 +107,75 @@
     <div class="view-options">
         <div >
             <button class="view-button selected-option" id="grid-button">
-                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 24 24" width="36" height="36">
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="60" height="50">
                   
-                    <line x1="0" y1="6" x2="24" y2="6" />
+                   
+                  <path fill="black" d="
+                    M 10 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+                    
+                    M 10 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
 
-                    <line x1="0" y1="12" x2="24" y2="12" />
-                    
-                    <line x1="0" y1="18" x2="24" y2="18" />
-                    
-                    <line x1="6" y1="24" x2="6" y2="0" />
+                    M 55 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
 
-                    <line x1="12" y1="24" x2="12" y2="0" />
-                    
-                    <line x1="18" y1="24" x2="18" y2="0" />
+                    M 55 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    "
+                  />
                 </svg>
             </button>
         </div>
 
         <div>
-            <button class="view-button" id="accordion-button" >
-                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 24 24" width="36" height="36">
+            <button class="view-button accordion-button" id="accordion-button" >
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="50" height="50">
                
-                  <path
+                  <path fill="black"
                   d="
-                    M 22 12
-                    a 10 10 0 0 0 -10 -10"
+                    M 30 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
                   />
+
+                  <path fill="black"
+                  d="
+                    M 70 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
+                  />
+
+                 
                 </svg>
             </button>
         </div>
+
+        
+    
     </div>
 
 <div id="grid-view" class="gallery">
@@ -166,7 +206,7 @@
        
     </div>
 
-    <div class=" xs-img">
+    <div class="xs-img">
         <img class="img-stylings" src="FREE-THE-KIDS.jpeg" alt="">
 
         
@@ -191,7 +231,7 @@
     </div>
 
     <div class="accordion-wrapper ac-3">
-        <img class="img-stylings accordion-img" src="DUO.jpeg" alt="">
+        <img class=" img-positioning img-stylings accordion-img" src="DUO.jpeg" alt="">
     </div>
 
     <div class="accordion-wrapper ac-4">
@@ -199,7 +239,7 @@
     </div>
 
     <div class="accordion-wrapper ac-5">
-        <img class="img-stylings accordion-img" src="FREE-THE-KIDS.jpeg" alt="">
+        <img class=" img-positioning img-stylings accordion-img" src="FREE-THE-KIDS.jpeg" alt="">
     </div>
 
     <div class="accordion-wrapper ac-6">
@@ -210,6 +250,9 @@
 
 
 </div>
+
+
+
 
     <div class="modal-slider-wrapper hidden">
 

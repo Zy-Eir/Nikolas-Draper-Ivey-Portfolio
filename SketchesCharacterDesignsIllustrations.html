@@ -102,11 +102,86 @@
        
 
     </div>
- 
-<div class="gallery">
 
-    <div class="img-wrapper small-img ">
-        <img class="img-stylings " src="KEEP-FIGHTING!.jpeg" alt="">
+    <div class="view-options">
+        <div >
+            <button class="view-button selected-option" id="grid-button">
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="60" height="50">
+                  
+                   
+                  <path fill="black" d="
+                    M 10 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+                    
+                    M 10 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    M 55 10
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    M 55 55
+                    l 35 0
+                    l 0 35
+                    l -35 0
+                    l 0 -35
+
+                    "
+                  />
+                </svg>
+            </button>
+        </div>
+
+        <div>
+            <button class="view-button accordion-button" id="accordion-button" >
+                <svg id="grid-icon" class="grid-icon view-icons-active" viewBox="0 0 100 100" width="50" height="50">
+               
+                  <path fill="black"
+                  d="
+                    M 30 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
+                  />
+
+                  <path fill="black"
+                  d="
+                    M 70 20
+                    a 10 10 0 0 0 -10 10
+                    l 0 45
+                    a 10 10 0 0 0 10 10
+                    a 10 10 0 0 0 10 -10
+                    l 0 -45
+                    a 10 10 0 0 0 -10 -10
+                    "
+                  />
+
+                 
+                </svg>
+            </button>
+        </div>
+
+        
+    
+    </div>
+
+ 
+<div id="grid-view" class="gallery">
+
+    <div class="img-wrapper half-img ">
+        <img class="img-stylings img-positioning" src="KEEP-FIGHTING!.jpeg" alt="">
         
         <div class="img-overlay">
 
@@ -115,7 +190,7 @@
 
     
 
-    <div class="img-wrapper medium-img ">
+    <div class="img-wrapper half-img ">
         <img class="img-stylings" src="THE-FUTURE-IS-COOLER-THAN-YOU-THINK.jpeg" alt="">
 
         <div class="img-overlay">
@@ -123,7 +198,7 @@
         </div>
     </div>
 
-    <div class="img-wrapper medium-img ">
+    <div class="img-wrapper half-img ">
         <img class="img-stylings" src="INNOVATION.jpeg" alt="">
 
         <div class="img-overlay">
@@ -131,8 +206,8 @@
         </div>
     </div>
 
-    <div class="img-wrapper small-img ">
-        <img class="img-stylings" src="Death+Lion.jpg" alt="">
+    <div class="img-wrapper half-img ">
+        <img class="img-stylings img-positioning" src="Death+Lion.jpg" alt="">
 
         <div class="img-overlay">
 
@@ -156,8 +231,16 @@
     </div>
 
 
-    <div class="img-wrapper large-img">
+    <div class="img-wrapper medium-img">
         <img class="img-stylings" src="HOMING-SHOT.jpg" alt="">
+
+        <div class="img-overlay">
+
+        </div>
+    </div>
+
+    <div class="img-wrapper small-img">
+        <img class="img-stylings" src="Lace+mask+and+rings.jpg" alt="">
 
         <div class="img-overlay">
 
@@ -169,7 +252,7 @@
 <div id="accordion-view" class="accordion-gallery accordion-gallery-hidden">
 
     <div class="accordion-wrapper ac-1">
-        <img class="img-stylings accordion-img" src="KEEP-FIGHTING!.jpeg" alt="">
+        <img class="img-positioning img-stylings accordion-img" src="KEEP-FIGHTING!.jpeg" alt="">
     </div>
 
     <div class="accordion-wrapper ac-2">
@@ -181,7 +264,7 @@
     </div>
 
     <div class="accordion-wrapper ac-4">
-        <img class="img-stylings accordion-img" src="Death+Lion.jpg" alt="">
+        <img class="img-positioning img-stylings accordion-img" src="Death+Lion.jpg" alt="">
     </div>
 
     <div class="accordion-wrapper ac-5">
@@ -196,7 +279,9 @@
         <img class="img-stylings accordion-img" src="HOMING-SHOT.jpg" alt="">
     </div>
 
-
+    <div class="accordion-wrapper ac-8">
+        <img class="img-stylings accordion-img" src="Lace+mask+and+rings.jpg" alt="">
+    </div>
 
 </div>
 
@@ -209,6 +294,5 @@
 </div>
 
    <script src="function.js"></script>
-    
 </body>
 </html>

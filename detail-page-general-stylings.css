@@ -52,8 +52,16 @@
     padding: 1rem 3.5rem;
     background-color: #000;
     color: #fff;
+    font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: 750ms ease;
+}
+
+.buy-button:hover{
+    background-color: #9c9c9c;
+    color: #000;
+    transition: 750ms ease;
 }
 
 .detail-price{
@@ -68,7 +76,17 @@
     display: none;
 }
 
+@media(min-width:480px){
+    .detail-slider{
+        max-height: 475px;
+    }
+}
+
 @media(min-width:768px){
+
+    .detail-slider{
+        max-height: 375px;
+    }
 
     .detail-wrapper{
         display: none;
@@ -95,6 +113,11 @@
 
 @media(min-width:1024px){
 
+    .detail-slider{
+        max-height: 550px;
+           
+    }
+
     .detail-img{
         max-height: 475px;
     }
@@ -107,11 +130,5 @@
 
     .buy-button{
         font-size: 20px;
-    }
-}
-
-@media(min-width:1025px){
-    .detail-img{
-        max-height: 575px;
     }
 }
