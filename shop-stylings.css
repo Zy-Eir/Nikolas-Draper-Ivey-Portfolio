@@ -1,25 +1,49 @@
+.shop-link-stylings{
+    color: #000;
+}
+
+.shop-link-stylings:hover{
+    color: #fff;
+}
+
 .product-section{
     padding: 1.25rem 1.25rem;
     display: grid;
     row-gap: 1.5rem;
     column-gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     font-family: jost;
 }
 
 
 .product-card{
-
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    transition: 750ms ease;
 }
 
+.product-card:hover{
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    transition: 750ms ease;
+}
+
+
+
 .product-img{
-    height: 200px;
+    height: 300px;
 }
 
 .product-info{
     text-align: center;
     font-weight: bold;
+    border-top: 2px solid #000;
+  
 }
+
+
 
 .product-name{
     padding: 1rem 0rem .5rem 0rem;
